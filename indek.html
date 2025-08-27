@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>แลกเปลี่ยนชีตสรุปมัธยม</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    /* ฟอนต์และพื้นหลัง */
+    body {
+      font-family: 'Kanit', sans-serif;
+      background: linear-gradient(135deg, #c3f0f2, #d9f7fa);
+      min-height: 100vh;
+      padding-bottom: 50px;
+      color: #2c3e50;
+    }
+
+    /* หัวข้อใหญ่ */
+    h1 {
+      font-weight: 700;
+      color: #117a8b;
+      text-shadow: 1px 1px 2px #a1d4d9;
+    }
+
+    /* กล่องเมนูรายวิชา */
+    .subject-btn {
+      margin: 5px;
+      border-radius: 30px;
+      font-weight: 600;
+      box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .subject-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* การ์ดชีต */
+    .sheet-card {
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      transition: transform 0.3s ease;
+      background: white;
+    }
+    .sheet-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    }
+
+    /* ปุ่มดูชีต */
+    .btn-outline-primary {
+      border-radius: 25px;
+      font-weight: 600;
+      padding-left: 18px;
+      padding-right: 18px;
+      background-color: #a1d4d9;
+      border-color: #5bb0b8;
+      color: #0b4c54;
+      transition: background-color 0.3s ease;
+    }
+    .btn-outline-primary:hover {
+      background-color: #117a8b;
+      color: #fff;
+      border-color: #117a8b;
+    }
+
+    /* ฟอร์มอัปโหลด */
+    .card {
+      border-radius: 20px;
+      background-color: #f0fcff;
+      box-shadow: 0 6px 12px rgb(0 0 0 / 0.08);
+    }
+    .card-title {
+      color: #117a8b;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    label {
+      font-weight: 600;
+      color: #117a8b;
+    }
+
+    /* Footer เล็กๆ */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #117a8b;
+      font-weight: 600;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 575.98px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .subject-btn {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center mb-5">📚 แลกเปลี่ยนชีตสรุปมัธยม</h1>
+
+    <!-- เมนูรายวิชา -->
+    <div class="text-center mb-4">
+      <button class="btn btn-outline-primary subject-btn" onclick="filterSubject('คณิตศาสตร์')">คณิตศาสตร์</button>
+      <button class="btn btn-outline-success subject-btn" onclick="fil
